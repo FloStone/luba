@@ -1,0 +1,19 @@
+{
+    "name": "flo5581/luba",
+    "description": "Small PHP Framework",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Flo Stone"
+        }
+    ],
+    "require": {
+        "Flo5581/Lubaframework": "dev-master",
+    	"Flo5581/Lubainstaller": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luba\\Controllers\\": "controllers/"
+        }
+    }
+}
