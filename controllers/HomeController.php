@@ -2,6 +2,8 @@
 
 namespace Luba\Controllers;
 
+use Luba\Framework\URL;
+
 class HomeController extends Controller
 {
 	protected static $actions = [
@@ -10,6 +12,6 @@ class HomeController extends Controller
 
 	public function index()
 	{
-		return view('home');
+		return $this->view('home', ['variable' => 'BLABAB']);
 	}
 }
