@@ -3,6 +3,8 @@
 namespace Luba\Controllers;
 
 use Luba\Framework\URL;
+use Luba\Form\Form;
+use Luba\Framework\Input;
 
 class HomeController extends Controller
 {
@@ -11,7 +13,7 @@ class HomeController extends Controller
 	];
 
 	public function index()
-	{
-		return $this->view('home', ['variable' => 'BLABAB']);
+	{			
+		return $this->view('home');
 	}
 }

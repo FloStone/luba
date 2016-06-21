@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testpage</title>
+</head>
+
+<body>
+
+<h2>Dies ist der Parent</h2>
+
+	<insert::body>
+
+</body>

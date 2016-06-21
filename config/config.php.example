@@ -1,6 +1,8 @@
 <?php
 
-define('DB_HOSTNAME', 'hostname');
+define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'username');
 define('DB_PASSWORD', 'password');
 define('DB_DATABASE', 'database');
+
+//define('FORM_TEMPLATES', __DIR__.'/../views/formtemplates/');

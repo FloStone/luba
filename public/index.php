@@ -2,6 +2,13 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-$app = new Luba\Framework\Application(rtrim(__DIR__, 'public'));
+try
+{
+	$app = new Luba\Framework\Application(rtrim(__DIR__, 'public'));
 
-$app->run();
+	$app->run();	
+}
+catch (Exception $e)
+{
+	print $e->getMessage();
+}

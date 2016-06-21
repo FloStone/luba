@@ -5,5 +5,6 @@
  * Simply name the route and bind it to the controller
  */
 return [
-	'/' => 'HomeController'
+	'/' => 'HomeController',
+	'home' => 'HomeController'
 ];
