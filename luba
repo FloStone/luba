@@ -2,5 +2,13 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-if (isset($argv[1]))
-	include "/commands/{$argv[1]}.php";
+$app = new Luba\Framework\Application(__DIR__.'/');
+
+$command = $argv[1];
+$commandDirectory = __DIR__.'/commands/';
+$baseCommandDirectory = __DIR__.'/vendor/flo5581/lubaframework/commands/';
+
+if (file_exists("$commandDirectory$command.php"))
+	include "$commandDirectory$command.php";
+elseif (file_exists("$baseCommandDirectory$command.php"))
+	include "$baseCommandDirectory$command.php";

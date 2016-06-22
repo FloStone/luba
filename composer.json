@@ -16,7 +16,17 @@
             "Luba\\Controllers\\": "controllers/"
         },
         "files": [
-            "config/config.php"
+            "config/config.php",
+            "config/global.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php luba copy-config",
+            "php luba clear-compiled"
+        ],
+        "post-update-cmd": [
+            "php luba clear-compiled"
         ]
     }
 }
