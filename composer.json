@@ -1,15 +1,15 @@
 {
     "name": "flo5581/luba",
     "description": "Small PHP Framework",
-    "version": "1.0",
+    "version": "0.1",
     "authors": [
         {
             "name": "Flo Stone"
         }
     ],
     "require": {
-        "Flo5581/Lubaframework": "dev-master",
-    	"Flo5581/Lubainstaller": "dev-master"
+        "Flo5581/Lubaframework": "0.1",
+        "Flo5581/mysql-plainphp": "1.0.*"
     },
     "autoload": {
         "psr-4": {

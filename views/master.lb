@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Testpage</title>
+	<title>Luba Framework</title>
 </head>
 
 <body>
 
-<h2>Dies ist der Parent</h2>
+<h2>A small and simple Framework</h2>
 
 	<insert::body>
 
