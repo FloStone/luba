@@ -8,8 +8,7 @@
         }
     ],
     "require": {
-        "Flo5581/Lubaframework": "0.1",
-        "Flo5581/mysql-plainphp": "1.0.*"
+        "Flo5581/Lubaframework": "0.1"
     },
     "autoload": {
         "psr-4": {
