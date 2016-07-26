@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "Flo5581/Lubaframework": "0.1"
+        "Flo5581/Lubaframework": "dev-master",
+        "Lubaaddons/Exceptionhandler": "dev-master"
     },
     "autoload": {
         "psr-4": {
