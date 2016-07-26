@@ -9,7 +9,8 @@
     ],
     "require": {
         "Flo5581/Lubaframework": "dev-master",
-        "Lubaaddons/Exceptionhandler": "dev-master"
+        "Lubaaddons/Exceptionhandler": "dev-master",
+        "Flo5581/mysql": "dev-master"
     },
     "autoload": {
         "psr-4": {
