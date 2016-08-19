@@ -8,13 +8,8 @@ $command = $argv[1];
 $commandDirectory = __DIR__.'/commands/';
 $baseCommandDirectory = __DIR__.'/vendor/flo5581/lubaframework/commands/';
 
-try {
-	if (file_exists("$commandDirectory$command.php"))
-		include "$commandDirectory$command.php";
-	elseif (file_exists("$baseCommandDirectory$command.php"))
-		include "$baseCommandDirectory$command.php";
-}
-catch (Exception $e)
-{
-	Log::excetion($e);
-}
+
+if (file_exists("$commandDirectory$command.php"))
+	include "$commandDirectory$command.php";
+elseif (file_exists("$baseCommandDirectory$command.php"))
+	include "$baseCommandDirectory$command.php";

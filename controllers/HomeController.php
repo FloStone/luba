@@ -2,13 +2,11 @@
 
 namespace Luba\Controllers;
 
-use Luba\Framework\URL;
-use Luba\Form\Form;
-use Luba\Framework\Input;
+use URL, Form, Input, Redirect, SQL, Session, Auth;
 
 class HomeController extends Controller
 {
-	protected static $actions = [
+	protected $actions = [
 		'index'
 	];
 
