@@ -2,7 +2,9 @@
 
 namespace Luba\Commands;
 
-abstract class Command
+use Luba\Framework\Command as BaseCommand;
+
+abstract class Command extends BaseCommand
 {
-	abstract public function run();
+	
 }
