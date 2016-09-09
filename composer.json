@@ -8,13 +8,15 @@
         }
     ],
     "require": {
-        "Flo5581/Lubaframework": "1.0.*",
-        "Lubaaddons/Exceptionhandler": "1.0.*",
-        "Flo5581/mysql": "1.1.*"
+        "Flo5581/Lubaframework": "dev-master",
+        "Lubaaddons/Exceptionhandler": "dev-master",
+        "Flo5581/mysql": "dev-master",
+        "Lubaaddons/cms": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Luba\\Controllers\\": "controllers/"
+            "Luba\\Controllers\\": "controllers/",
+            "Luba\\Commands\\": "commands/"
         },
         "files": [
             "config/config.php",
@@ -22,8 +24,11 @@
         ]
     },
     "scripts": {
+        "pre-install-cmd": [
+            "php copyconfig"
+        ],
         "post-install-cmd": [
-            "php luba copy-config",
+            "php luba post-install-clean",
             "php luba clear-compiled"
         ],
         "post-update-cmd": [

@@ -5,11 +5,12 @@ require __DIR__.'/vendor/autoload.php';
 $app = new Luba\Framework\Application(__DIR__.'/');
 
 $command = $argv[1];
-$commandDirectory = __DIR__.'/commands/';
-$baseCommandDirectory = __DIR__.'/vendor/flo5581/lubaframework/commands/';
 
+$class = "Luba\Commands\\$command";
 
-if (file_exists("$commandDirectory$command.php"))
-	include "$commandDirectory$command.php";
-elseif (file_exists("$baseCommandDirectory$command.php"))
-	include "$baseCommandDirectory$command.php";
+if (!class_exists($class))
+	throw new \Exception("Command $command not found!");
+
+$instance = new $class;
+
+$instance->run();
