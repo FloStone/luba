@@ -16,11 +16,7 @@
         "psr-4": {
             "Luba\\Controllers\\": "controllers/",
             "Luba\\Commands\\": "commands/"
-        },
-        "files": [
-            "config/config.php",
-            "config/global.php"
-        ]
+        }
     },
     "scripts": {
         "pre-install-cmd": [

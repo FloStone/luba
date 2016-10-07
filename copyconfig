@@ -1,3 +1,0 @@
-<?php
-
-copy(__DIR__.'/config/config.php.example', __DIR__.'/config/config.php');
