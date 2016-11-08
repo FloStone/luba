@@ -19,15 +19,11 @@
         }
     },
     "scripts": {
-        "pre-install-cmd": [
-            "php copyconfig"
-        ],
         "post-install-cmd": [
-            "php luba post-install-clean",
-            "php luba clear-compiled"
+            "php luba ClearCompiled"
         ],
         "post-update-cmd": [
-            "php luba clear-compiled"
+            "php luba ClearCompiled"
         ]
     }
 }
