@@ -2,10 +2,27 @@
 
 namespace Luba\Commands;
 
-class migrate extends Command
+use Luba\Framework\Migrator;
+use Flo\MySQL\MySQL;
+use SQL;
+
+class migrate extends Migrator
 {
-	public function run()
+	/**
+	 * Build your tables
+	 * @return void
+	 */
+	public function build()
 	{
-		
+		#...
+	}
+
+	/**
+	 * Destroy your tables
+	 * @return void
+	 */
+	public function destroy()
+	{
+		#...
 	}
 }
