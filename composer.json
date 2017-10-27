@@ -1,16 +1,16 @@
 {
-    "name": "flo5581/luba",
+    "name": "flostone/luba",
     "description": "Small PHP Framework",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "authors": [
         {
             "name": "Flo Stone"
         }
     ],
     "require": {
-        "Flo5581/Lubaframework": "1.2.*",
+        "FloStone/Lubaframework": "1.2.*",
         "Lubaaddons/Exceptionhandler": "1.0.*",
-        "Flo5581/mysql": "1.2.*"
+        "FloStone/mysql": "1.2.*"
     },
     "autoload": {
         "psr-4": {
