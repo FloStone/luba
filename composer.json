@@ -8,9 +8,7 @@
         }
     ],
     "require": {
-        "FloStone/Lubaframework": "1.2.*",
-        "Lubaaddons/Exceptionhandler": "1.0.*",
-        "FloStone/mysql": "1.2.*"
+        "FloStone/Lubaframework": "1.2.*"
     },
     "autoload": {
         "psr-4": {
