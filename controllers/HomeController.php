@@ -2,7 +2,7 @@
 
 namespace Luba\Controllers;
 
-use URL, Form, Input, Redirect, SQL, Session, Auth;
+use URL, Form, Input, Redirect, SQL, Session, Auth, File, Log;
 
 class HomeController extends Controller
 {

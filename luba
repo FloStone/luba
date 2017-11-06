@@ -4,6 +4,12 @@ require __DIR__.'/vendor/autoload.php';
 
 $app = new Luba\Framework\Application(__DIR__.'/');
 
+if (!isset($argv[1]))
+{
+	echo "Bad command!\n";
+	exit;
+}
+
 $command = $argv[1];
 
 $class = "Luba\Commands\\$command";
