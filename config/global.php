@@ -1,9 +1,9 @@
 <?php
 
-//define('FORM_TEMPLATES', __DIR__.'/../views/formtemplates/');
+//Config::set('FORM_TEMPLATES', __DIR__.'/../views/formtemplates/');
 
 // Authentication
-define('AUTH_HASH', 'sha256');
-define('AUTH_TABLE', 'users');
-define('AUTH_USERNAME_COLUMN', 'username');
-define('AUTH_PASSWORD_COLUMN', 'password');
+Config::set('AUTH_HASH', 'sha256');
+Config::set('AUTH_TABLE', 'users');
+Config::set('AUTH_USERNAME_COLUMN', 'username');
+Config::set('AUTH_PASSWORD_COLUMN', 'password');

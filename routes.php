@@ -5,6 +5,13 @@
  * Simply name the route and bind it to the controller
  */
 return [
-	'/' => 'HomeController@index',
-	'home' => 'HomeController'
+	'callbacks' => [
+
+	],
+	'actions' => [
+		'/' => 'HomeController@index',
+	],
+	'controllers' => [
+		'home' => 'HomeController'
+	]
 ];
