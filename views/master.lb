@@ -35,6 +35,9 @@
 		width:442px;
 		opacity:0;
 	}
+	.version {
+		color:lightgrey;
+	}
 
 	</style>
 

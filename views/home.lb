@@ -2,7 +2,7 @@
 
 <fill::body>
 
-	<h1>Luba Framework<span><br>The small and simple Framework</span></h1>
+	<h1>Luba Framework<span><br>The small and simple Framework</span><br><span class="version">Version << Luba::VERSION >></span></h1>
 
 </fill::body>
 
