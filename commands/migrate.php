@@ -14,7 +14,9 @@ class migrate extends Migrator
 	 */
 	public function build()
 	{
-		#...
+		SQL::createBasic('testtable', function($table){
+			$table->string('huhu');
+		});
 	}
 
 	/**
@@ -23,6 +25,6 @@ class migrate extends Migrator
 	 */
 	public function destroy()
 	{
-		#...
+		SQL::drop('testtable');
 	}
 }
