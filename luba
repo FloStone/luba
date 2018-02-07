@@ -6,17 +6,19 @@ $app = new Luba\Framework\Application(__DIR__.'/');
 
 if (!isset($argv[1]))
 {
-	echo "Bad command!\n";
-	exit;
+	$command = "help";
 }
-
-$command = $argv[1];
+else
+{
+	$command = $argv[1];
+}
 
 $class = "Luba\Commands\\$command";
 
 if (!class_exists($class))
-	throw new \Exception("Command $command not found!");
+	throw new \Luba\Exceptions\CommandException("Command $command not found. Use 'help' command for more info.");
 
 $instance = new $class;
+$instance->setArguments($argv);
 
 $instance->run();

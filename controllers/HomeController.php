@@ -6,7 +6,7 @@ use URL, Form, Input, Redirect, SQL, Session, Auth, File, Log, Config;
 
 class HomeController extends Controller
 {
-	protected $actions = [
+	protected $get_actions = [
 		'index'
 	];
 

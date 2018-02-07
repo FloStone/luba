@@ -8,6 +8,8 @@ use SQL;
 
 class migrate extends Migrator
 {
+	public static $description = "\tCreate or destroy database tables.";
+
 	/**
 	 * Build your tables
 	 * @return void

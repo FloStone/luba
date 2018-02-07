@@ -18,10 +18,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php luba ClearCompiled"
+            "php luba clear_compiled"
         ],
         "post-update-cmd": [
-            "php luba ClearCompiled"
+            "php luba clear_compiled"
         ]
     }
 }
