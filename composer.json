@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "FloStone/Lubaframework": "2.0.0"
+        "FloStone/Lubaframework": "dev-master"
     },
     "autoload": {
         "psr-4": {
